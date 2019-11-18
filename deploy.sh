@@ -22,7 +22,7 @@ cd public
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:gzh2626/gzh2626.github.io.git master
+git push -f git@github.com:gzh2626.github.io.git master
 
 
 
