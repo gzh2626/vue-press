@@ -6,6 +6,13 @@ set -e
 # 生成静态文件
 npm run build
 
+# 上传代码
+git add -A
+
+git commit -m 'blog'
+
+git push 
+
 # 进入生成的文件夹
 cd public
 
@@ -15,6 +22,9 @@ cd public
 git init
 git add -A
 git commit -m 'deploy'
+git push -f git@github.com:gzh2626/gzh2626.github.io.git master
+
+
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:gzh2626/<USERNAME>.github.io.git master
